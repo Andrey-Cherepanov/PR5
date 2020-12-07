@@ -25,6 +25,7 @@ class MyQueue(object):
         """
         if self.head == self.end_of_queue:
             self.head=Node()
+            self.end_of_queue=self.head
         else:
             self.head=self.head.next
 
